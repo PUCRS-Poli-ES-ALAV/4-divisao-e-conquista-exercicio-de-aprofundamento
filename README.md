@@ -30,8 +30,8 @@
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
    ```java
-   int maxVal1(int A[], int n) {  
-       int max = A[0];
+   long maxVal1(long A[], int n) {  
+       long max = A[0];
        for (int i = 1; i < n; i++) {  
            if( A[i] > max ) 
               max = A[i];
@@ -48,13 +48,13 @@
     * teste-o para vetores de inteiros com conteúdos randômicos, e tamanho 32, 2048 e 1.048.576. Nestes testes, contabilize o número de iterações que o algoritmo executa, e o tempo gasto;
     
    ```java
-   int maxVal2(int A[], int init, int end) {  
+   long maxVal2(long A[], int init, int end) {  
        if (end - init <= 1)
            return max(A[init], A[end]);  
        else {
              int m = (init + end)/2;
-             int v1 = maxVal2(A,init,m);   
-             int v2 = maxVal2(A,m+1,end);  
+             long v1 = maxVal2(A,init,m);   
+             long v2 = maxVal2(A,m+1,end);  
              return max(v1,v2);
             }
    }
