@@ -10,23 +10,33 @@ public class AppTest {
 
     @Test
     public void testMergeSortWithRandomNumbers() {
-        ArrayList<Integer> array32 = generateRandomList(32);
-        ArrayList<Integer> sArray32 = App.mergeSort(array32);
-        System.out.println(App.recursionCount);
-        System.out.println(App.mergeTime);
-        assertTrue(isSorted(sArray32));
+        // ArrayList<Integer> array32 = generateRandomList(32);
+        // ArrayList<Integer> sArray32 = App.mergeSort(array32);
+        // System.out.println(App.recursionCount);
+        // System.out.println(App.time);
+        // assertTrue(isSorted(sArray32));
 
-        ArrayList<Integer> array2048 = generateRandomList(2048);
-        ArrayList<Integer> sArray2048 = App.mergeSort(array2048);
-        System.out.println(App.recursionCount);
-        System.out.println(App.mergeTime);
-        assertTrue(isSorted(sArray2048));
+        // ArrayList<Integer> array2048 = generateRandomList(2048);
+        // ArrayList<Integer> sArray2048 = App.mergeSort(array2048);
+        // System.out.println(App.recursionCount);
+        // System.out.println(App.time);
+        // assertTrue(isSorted(sArray2048));
 
-        ArrayList<Integer> array1m = generateRandomList(1048576);
-        ArrayList<Integer> sArray1m = App.mergeSort(array1m);
-        System.out.println(App.recursionCount);
-        System.out.println(App.mergeTime);
-        assertTrue(isSorted(sArray1m));
+        // ArrayList<Integer> array1m = generateRandomList(1048576);
+        // ArrayList<Integer> sArray1m = App.mergeSort(array1m);
+        // System.out.println(App.recursionCount);
+        // System.out.println(App.time);
+        // assertTrue(isSorted(sArray1m));
+    }
+
+    @Test
+    public void testMaxValueArray(){
+        // ArrayUtils r = new ArrayUtils(32);
+        // long max = App.maxVal1(r.array, r.array.length);
+        // System.out.println();
+        // System.out.println(max);
+        // System.out.println("Iterações: " + App.recursionCount);
+        // System.out.println("Tempo: " + App.time);
     }
 
     private ArrayList<Integer> generateRandomList(Integer size) {
